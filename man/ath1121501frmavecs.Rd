@@ -84,9 +84,9 @@ The vectors were computed based on 100 triplicates, orginating from 100 differen
     GSM5597522 \tab Col 6h wound A \tab GSE184793 \tab abiotic \tab Col-0 \tab leaf \tab  \tab wounding \cr
     GSM5597523 \tab Col 6h wound B \tab GSE184793 \tab abiotic \tab Col-0 \tab leaf \tab  \tab wounding \cr
     GSM5597524 \tab Col 6h wound C \tab GSE184793 \tab abiotic \tab Col-0 \tab leaf \tab  \tab wounding \cr
-    GSM2769932 \tab Wild-type seedlings, primed and triggered, biological rep2 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37°C 1 hour + normal temperature 3 days + 37°C 1 hour) \cr
-    GSM2769933 \tab Wild-type seedlings, primed and triggered, biological rep3 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37°C 1 hour + normal temperature 3 days + 37°C 1 hour) \cr
-    GSM2769931 \tab Wild-type seedlings, primed and triggered, biological rep1 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37°C 1 hour + normal temperature 3 days + 37°C 1 hour) \cr
+    GSM2769932 \tab Wild-type seedlings, primed and triggered, biological rep2 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37degreeC 1 hour + normal temperature 3 days + 37degreeC 1 hour) \cr
+    GSM2769933 \tab Wild-type seedlings, primed and triggered, biological rep3 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37degreeC 1 hour + normal temperature 3 days + 37degreeC 1 hour) \cr
+    GSM2769931 \tab Wild-type seedlings, primed and triggered, biological rep1 \tab GSE103398 \tab abiotic \tab Col-0 \tab seedling \tab 1-week-old \tab heat primed and triggered (37degreeC 1 hour + normal temperature 3 days + 37degreeC 1 hour) \cr
     GSM265411 \tab Arabidopsis, whole roots, -Fe, replicate 1 \tab GSE10496 \tab abiotic \tab Col-0 \tab root \tab 6-day-old \tab iron deficiency \cr
     GSM265412 \tab Arabidopsis, whole roots, -Fe, replicate 2 \tab GSE10496 \tab abiotic \tab Col-0 \tab root \tab 6-day-old \tab iron deficiency \cr
     GSM265413 \tab Arabidopsis, whole roots, -Fe, replicate 3 \tab GSE10496 \tab abiotic \tab Col-0 \tab root \tab 6-day-old \tab iron deficiency \cr
@@ -123,9 +123,9 @@ The vectors were computed based on 100 triplicates, orginating from 100 differen
     GSM4125057 \tab wt Cd100 rep 1 \tab GSE138943 \tab abiotic \tab Col-0 \tab seedling \tab 2-week-old \tab cadmium \cr
     GSM4125058 \tab wt Cd100 rep 2 \tab GSE138943 \tab abiotic \tab Col-0 \tab seedling \tab 2-week-old \tab cadmium \cr
     GSM4125059 \tab wt Cd100 rep 3 \tab GSE138943 \tab abiotic \tab Col-0 \tab seedling \tab 2-week-old \tab cadmium \cr
-    GSM392180 \tab WT-16ºC-RepA \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
-    GSM392263 \tab WT-16ºC-RepB \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
-    GSM392273 \tab WT-16ºC-RepC \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
+    GSM392180 \tab WT-16degreeC-RepA \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
+    GSM392263 \tab WT-16degreeC-RepB \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
+    GSM392273 \tab WT-16degreeC-RepC \tab GSE15689 \tab abiotic \tab Col-0 \tab seedling \tab 10-day-old \tab cold \cr
     GSM5584760 \tab col submerged for 48h, biological rep1 \tab GSE184340 \tab abiotic \tab Col-0 \tab leaf \tab 4-week-old \tab submergence (hypoxia) \cr
     GSM5584761 \tab col submerged for 48h, biological rep2 \tab GSE184340 \tab abiotic \tab Col-0 \tab leaf \tab 4-week-old \tab submergence (hypoxia) \cr
     GSM5584762 \tab col submerged for 48h, biological rep3 \tab GSE184340 \tab abiotic \tab Col-0 \tab leaf \tab 4-week-old \tab submergence (hypoxia) \cr
@@ -144,21 +144,21 @@ The vectors were computed based on 100 triplicates, orginating from 100 differen
     GSM2896650 \tab Columbia, biological rep1 \tab GSE108376 \tab control \tab Col-0 \tab seedling \tab 12-day-old \tab Murashige and Skoog medium; 16h photoperiod; 75 microE light intensity \cr
     GSM2896651 \tab Columbia, biological rep2 \tab GSE108376 \tab control \tab Col-0 \tab seedling \tab 12-day-old \tab Murashige and Skoog medium; 16h photoperiod; 75 microE light intensity \cr
     GSM2896652 \tab Columbia, biological rep3 \tab GSE108376 \tab control \tab Col-0 \tab seedling \tab 12-day-old \tab Murashige and Skoog medium; 16h photoperiod; 75 microE light intensity \cr
-    GSM3639524 \tab seedings under mock treatment, biological rep1 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 °C; mock treatment (DMSO) \cr
-    GSM3639525 \tab seedings under mock treatment, biological rep2 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 °C; mock treatment (DMSO) \cr
-    GSM3639526 \tab seedings under mock treatment, biological rep3 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 °C; mock treatment (DMSO) \cr
-    GSM538647 \tab Seedlings untreated, biological rep1 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 °C \cr
-    GSM538648 \tab Seedlings untreated, biological rep2 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 °C \cr
-    GSM538649 \tab Seedlings untreated, biological rep3 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 °C \cr
-    GSM542673 \tab control_4h-1 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 °C \cr
-    GSM542674 \tab control_4h-2 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 °C \cr
-    GSM542675 \tab control_4h-3 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 °C \cr
+    GSM3639524 \tab seedings under mock treatment, biological rep1 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 degreeC; mock treatment (DMSO) \cr
+    GSM3639525 \tab seedings under mock treatment, biological rep2 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 degreeC; mock treatment (DMSO) \cr
+    GSM3639526 \tab seedings under mock treatment, biological rep3 \tab GSE127830 \tab control \tab Col-0 \tab seedings growing on filter paper \tab 10-day-old \tab filter paper medium; 12h photoperiod; 120 microE light intensity; 60 \% relative humidity; 25 degreeC; mock treatment (DMSO) \cr
+    GSM538647 \tab Seedlings untreated, biological rep1 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 degreeC \cr
+    GSM538648 \tab Seedlings untreated, biological rep2 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 degreeC \cr
+    GSM538649 \tab Seedlings untreated, biological rep3 \tab GSE21556 \tab control \tab Col-0 \tab seedling \tab 8-day-old \tab 1:3 vermiculite:soil; 16h photoperiod; 80-100 microE light intensity; 50-60 \% relative humidity; 22 degreeC \cr
+    GSM542673 \tab control_4h-1 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 degreeC \cr
+    GSM542674 \tab control_4h-2 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 degreeC \cr
+    GSM542675 \tab control_4h-3 \tab GSE21786 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate with sucrose; 22 degreeC \cr
     GSM1028173 \tab Col-0 biological rep1 \tab GSE41958 \tab control \tab Col-0 \tab seedling \tab 15-day-old \tab Murashige and Skoog medium with sucrose; 16h photoperiod; 5 hours zeitgeber time \cr
     GSM1028174 \tab Col-0 biological rep2 \tab GSE41958 \tab control \tab Col-0 \tab seedling \tab 15-day-old \tab Murashige and Skoog medium with sucrose; 16h photoperiod; 5 hours zeitgeber time \cr
     GSM1028175 \tab Col-0 biological rep3 \tab GSE41958 \tab control \tab Col-0 \tab seedling \tab 15-day-old \tab Murashige and Skoog medium with sucrose; 16h photoperiod; 5 hours zeitgeber time \cr
-    GSM250982 \tab Col-0 without treatment, biological rep1 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 °C \cr
-    GSM250983 \tab Col-0 without treatment, biological rep2 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 °C \cr
-    GSM250984 \tab Col-0 without treatment, biological rep3 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 °C \cr
+    GSM250982 \tab Col-0 without treatment, biological rep1 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 degreeC \cr
+    GSM250983 \tab Col-0 without treatment, biological rep2 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 degreeC \cr
+    GSM250984 \tab Col-0 without treatment, biological rep3 \tab GSE9957 \tab control \tab Col-0 \tab shoot \tab 3-week-old \tab 14h photoperiod; 22 degreeC \cr
     GSM1202382 \tab Col-0, WT, at HL 0h, biological rep1 \tab GSE49596 \tab control \tab Col-0 \tab shoot \tab 12-day-old \tab half Murashige and Skoog medium with sucrose; 24h photoperiod; 10 microE light intensity \cr
     GSM1202383 \tab Col-0, WT, at HL 0h, biological rep2 \tab GSE49596 \tab control \tab Col-0 \tab shoot \tab 12-day-old \tab half Murashige and Skoog medium with sucrose; 24h photoperiod; 10 microE light intensity \cr
     GSM1202384 \tab Col-0, WT, at HL 0h, biological rep3 \tab GSE49596 \tab control \tab Col-0 \tab shoot \tab 12-day-old \tab half Murashige and Skoog medium with sucrose; 24h photoperiod; 10 microE light intensity \cr
@@ -168,39 +168,39 @@ The vectors were computed based on 100 triplicates, orginating from 100 differen
     GSM128757 \tab Mittler_2-1_wildtype_Rep1_ATH1 \tab GSE5530 \tab control \tab Col-0 \tab seedling \tab 5-day old \tab Murashige and Skoog liquid medium \cr
     GSM128758 \tab Mittler_2-2_wildtype_Rep2_ATH1 \tab GSE5530 \tab control \tab Col-0 \tab seedling \tab 5-day old \tab Murashige and Skoog liquid medium \cr
     GSM128759 \tab Mittler_2-3_wildtype_Rep3_ATH1 \tab GSE5530 \tab control \tab Col-0 \tab seedling \tab 5-day old \tab Murashige and Skoog liquid medium \cr
-    GSM1875295 \tab WT_rep1 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9-day-old \tab germination medium with glucose; 16h photoperiod;  23 °C day/ 21 °C night \cr
-    GSM1875296 \tab WT_rep2 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9 day old \tab germination medium with glucose; 16h photoperiod;  23 °C day/ 21 °C night \cr
-    GSM1875297 \tab WT_rep3 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9 day old \tab germination medium with glucose; 16h photoperiod;  23 °C day/ 21 °C night \cr
-    GSM9595 \tab Col_control_I_1 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 °C \cr
-    GSM9596 \tab Col_control_I_2 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 °C \cr
-    GSM9597 \tab Col_control_I_3 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 °C \cr
-    GSM2144831 \tab Col-0, biological rep1 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 °C; mock treatment (water) \cr
-    GSM2144832 \tab Col-0, biological rep2 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 °C; mock treatment (water) \cr
-    GSM2144833 \tab Col-0, biological rep3 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 °C; mock treatment (water) \cr
-    GSM591834 \tab WT mock treated_biological rep 1 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 °C \cr
-    GSM591835 \tab WT mock treated_biological rep 2 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 °C \cr
-    GSM591836 \tab WT mock treated_biological rep 3 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 °C \cr
+    GSM1875295 \tab WT_rep1 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9-day-old \tab germination medium with glucose; 16h photoperiod;  23 degreeC day/ 21 degreeC night \cr
+    GSM1875296 \tab WT_rep2 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9 day old \tab germination medium with glucose; 16h photoperiod;  23 degreeC day/ 21 degreeC night \cr
+    GSM1875297 \tab WT_rep3 \tab GSE72954 \tab control \tab Col-0 \tab seedling \tab 9 day old \tab germination medium with glucose; 16h photoperiod;  23 degreeC day/ 21 degreeC night \cr
+    GSM9595 \tab Col_control_I_1 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 degreeC \cr
+    GSM9596 \tab Col_control_I_2 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 degreeC \cr
+    GSM9597 \tab Col_control_I_3 \tab GSE629 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog liquid medium with sucrose; 16h photoperiod; 24 degreeC \cr
+    GSM2144831 \tab Col-0, biological rep1 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 degreeC; mock treatment (water) \cr
+    GSM2144832 \tab Col-0, biological rep2 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 degreeC; mock treatment (water) \cr
+    GSM2144833 \tab Col-0, biological rep3 \tab GSE81218 \tab control \tab Col-0 \tab seedling \tab 10-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 120 microE light intensity; 21 degreeC; mock treatment (water) \cr
+    GSM591834 \tab WT mock treated_biological rep 1 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 degreeC \cr
+    GSM591835 \tab WT mock treated_biological rep 2 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 degreeC \cr
+    GSM591836 \tab WT mock treated_biological rep 3 \tab GSE24052 \tab control \tab Col-0 -800GSTF8::LUC \tab seedling \tab 4-day-old \tab Murashige and Skoog agar plate; 16h photoperiod; 21 degreeC \cr
     GSM617578 \tab Col, rep1 \tab GSE25134 \tab control \tab Col-0 \tab seedling \tab 4.5-day-old \tab half Murashige and Skoog medium with sucrose; 0h photoperiod \cr
     GSM617579 \tab Col, rep2 \tab GSE25134 \tab control \tab Col-0 \tab seedling \tab 4.5-day-old \tab half Murashige and Skoog medium with sucrose; 0h photoperiod \cr
     GSM617580 \tab Col, rep3 \tab GSE25134 \tab control \tab Col-0 \tab seedling \tab 4.5-day-old \tab half Murashige and Skoog medium with sucrose; 0h photoperiod \cr
-    GSM656490 \tab Col-0, 0 hrs, bio rep 2 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 °C \cr
-    GSM656491 \tab Col-0, 0 hrs, bio rep 3 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 °C \cr
-    GSM656492 \tab Col-0, 0 hrs, bio rep 4 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 °C \cr
-    GSM738872 \tab Col-0 WT seedling at 5 dpg, biological rep2 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 °C \cr
-    GSM738873 \tab Col-0 WT seedling at 5 dpg, biological rep3 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 °C \cr
-    GSM738874 \tab Col-0 WT seedling at 5 dpg, biological rep4 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 °C \cr
-    GSM761617 \tab Columbia_0min_biorep1 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 °C \cr
-    GSM761620 \tab Columbia_0min_biorep4 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 °C \cr
-    GSM761621 \tab Columbia_0min_biorep5 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 °C \cr
-    GSM856033 \tab seedling at 14 day_mock treatment_biological replica 1 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 °C; mock treatment (ethanol) \cr
-    GSM856034 \tab seedling at 14 day_mock treatment_biological replica 2 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 °C; mock treatment (ethanol) \cr
-    GSM856035 \tab seedling at 14 day_mock treatment_biological replica 3 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 °C; mock treatment (ethanol) \cr
-    GSM686101 \tab wild type Col-0, rep1 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23°C \cr
-    GSM686102 \tab wild type Col-0, rep2 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23°C \cr
-    GSM686103 \tab wild type Col-0, rep3 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23°C \cr
-    GSM1304062 \tab Leaves mock treated 3 h, biological rep1 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\\\% humidity; 21 °C; mock treatment (methanol) \cr
-    GSM1304063 \tab Leaves mock treated 3 h, biological rep2 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\% humidity; 21 °C; mock treatment (methanol) \cr
-    GSM1304064 \tab Leaves mock treated 3 h, biological rep3 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\% humidity; 21 °C; mock treatment (methanol) \cr
+    GSM656490 \tab Col-0, 0 hrs, bio rep 2 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 degreeC \cr
+    GSM656491 \tab Col-0, 0 hrs, bio rep 3 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 degreeC \cr
+    GSM656492 \tab Col-0, 0 hrs, bio rep 4 \tab GSE26679 \tab control \tab Col-0 \tab shoot \tab 4-week-old \tab Metromix soil; 9h photoperiod; 23 degreeC \cr
+    GSM738872 \tab Col-0 WT seedling at 5 dpg, biological rep2 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 degreeC \cr
+    GSM738873 \tab Col-0 WT seedling at 5 dpg, biological rep3 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 degreeC \cr
+    GSM738874 \tab Col-0 WT seedling at 5 dpg, biological rep4 \tab GSE29814 \tab control \tab Col-0 \tab seedling \tab 5-day-old \tab Murashige and Skoog agar plate; 18h photoperiod; 21 degreeC \cr
+    GSM761617 \tab Columbia_0min_biorep1 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 degreeC \cr
+    GSM761620 \tab Columbia_0min_biorep4 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 degreeC \cr
+    GSM761621 \tab Columbia_0min_biorep5 \tab GSE30702 \tab control \tab Col-0 \tab seedling \tab 1-week-old \tab Murashige and Skoog medium with sucrose; 22 degreeC \cr
+    GSM856033 \tab seedling at 14 day_mock treatment_biological replica 1 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 degreeC; mock treatment (ethanol) \cr
+    GSM856034 \tab seedling at 14 day_mock treatment_biological replica 2 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 degreeC; mock treatment (ethanol) \cr
+    GSM856035 \tab seedling at 14 day_mock treatment_biological replica 3 \tab GSE34837 \tab control \tab Col-0 \tab seedling \tab 2-week-old \tab Murashige and Skoog agar plate; 16h photoperiod; 22 degreeC; mock treatment (ethanol) \cr
+    GSM686101 \tab wild type Col-0, rep1 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23degreeC \cr
+    GSM686102 \tab wild type Col-0, rep2 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23degreeC \cr
+    GSM686103 \tab wild type Col-0, rep3 \tab GSE27704 \tab control \tab Col-0 \tab seedling \tab 3.25-day-old \tab Murashige and Skoog medium; 72 hours darkness + 6 hours 100 microE light intensity; 23degreeC \cr
+    GSM1304062 \tab Leaves mock treated 3 h, biological rep1 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\\\% humidity; 21 degreeC; mock treatment (methanol) \cr
+    GSM1304063 \tab Leaves mock treated 3 h, biological rep2 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\% humidity; 21 degreeC; mock treatment (methanol) \cr
+    GSM1304064 \tab Leaves mock treated 3 h, biological rep3 \tab GSE53957 \tab control \tab Col-0 \tab rosette leaf \tab 3-week-old \tab soil; 11h photoperiod; 100 microE light intensity; 70\% humidity; 21 degreeC; mock treatment (methanol) \cr
     GSM2482338 \tab Col-0 developing seeds, 10-11 days after flower opening, biological replicate 1 [re-analysis] \tab GSE94763 \tab developmental \tab Col-0 \tab silique \tab 10-11 days after flower opening \tab control \cr
     GSM2482339 \tab Col-0 developing seeds, 10-11 days after flower opening, biological replicate 2 [re-analysis] \tab GSE94763 \tab developmental \tab Col-0 \tab silique \tab 10-11 days after flower opening \tab control \cr
     GSM2482340 \tab Col-0 developing seeds, 10-11 days after flower opening, biological replicate 3 [re-analysis] \tab GSE94763 \tab developmental \tab Col-0 \tab silique \tab 10-11 days after flower opening \tab control \cr

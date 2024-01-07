@@ -5,11 +5,12 @@ Created: Wed Nov 29 19:56:51 2023
 Author: Matthew N. McCall <mmccall@jhsph.edu>
 Description: This package was automatically created by package frmaTools version 1.52.0.
 Maintainer: Quentin Riviere <qri@hotmail.be>
-Suggests: frma, GEOquery, affy, ath1121501.db
+Suggests: frma, GEOquery, affy, ath1121501.db, BiocStyle, knitr,
+        rmarkdown
 Depends: R (>= 3.5.0)
 License: GPL (>= 2)
 biocViews: AnnotationData, AffymetrixChip, ath1121501, Arabidopsis
         thaliana
 NeedsCompilation: no
-VignetteBuilder: utils
-Packaged: 2024-01-05 13:23:33 UTC; quentin
+VignetteBuilder: knitr
+Packaged: 2024-01-07 17:33:39 UTC; quentin
