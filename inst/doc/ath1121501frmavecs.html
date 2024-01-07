@@ -708,7 +708,7 @@ function toggle_visibility(id1) {
 <p class="author-name">Quentin Riviere</p>
 <h4 class="date">2024-01-07</h4>
 <h4 class="package">Package</h4>
-<p>ath1121501frmavecs 1.0.0</p>
+<p>ath1121501frmavecs 0.99.0</p>
 
 </div>
 
@@ -720,6 +720,7 @@ function toggle_visibility(id1) {
 <li><a href="#usage"><span class="toc-section-number">3</span> Usage</a></li>
 <li><a href="#references"><span class="toc-section-number">4</span> References</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
+<li><a href="#session-info"><span class="toc-section-number">A</span> Session info</a></li>
 </ul>
 </div>
 
@@ -731,18 +732,20 @@ function toggle_visibility(id1) {
 <div id="installation" class="section level1" number="2">
 <h1><span class="header-section-number">2</span> Installation</h1>
 <p><em>ath1121501frmavecs</em> is an annotation package for the <em>fRMA</em> Bioconductor package, allowing to preprocess micro-array data for <em>Arabidopsis thaliana</em> given the <strong>GPL198</strong> platform (Array: Affymetrix Arabidopsis ATH1 Genome Array; CDF: ATH1-121501). It require a version of R &gt;= 3.5.0. It can be installed from the github repository as follows:</p>
-<pre class="r"><code>    if(!require(&quot;remotes&quot;, quietly = TRUE)){  
-        install.packages(&quot;remotes&quot;)
-        }
-    if(!require(&quot;BiocManager&quot;, quietly = TRUE)){  
-        install.packages(&quot;BiocManager&quot;)
-    }
-  options(repos = BiocManager::repositories())
-  getOption(&quot;repos&quot;)
-  BiocManager::install(&quot;RiviereQuentin/ath1121501frmavecs&quot;,                     
-    dependencies = TRUE,                     
-    build_vignettes = TRUE,
-    force = TRUE)</code></pre>
+<pre class="r"><code>if (!require(&quot;remotes&quot;, quietly = TRUE)) {
+  install.packages(&quot;remotes&quot;)
+}
+if (!require(&quot;BiocManager&quot;, quietly = TRUE)) {
+  install.packages(&quot;BiocManager&quot;)
+}
+options(repos = BiocManager::repositories())
+getOption(&quot;repos&quot;)
+BiocManager::install(
+  &quot;RiviereQuentin/ath1121501frmavecs&quot;,
+  dependencies = TRUE,
+  build_vignettes = TRUE,
+  force = TRUE
+)</code></pre>
 </div>
 <div id="usage" class="section level1" number="3">
 <h1><span class="header-section-number">3</span> Usage</h1>
@@ -754,25 +757,41 @@ library(frma)
 
 # 1. Download the CEL files
 GSM_considered &lt;- c(&quot;GSM433634&quot;, &quot;GSM1179807&quot;, &quot;GSM433644&quot;)
-for (sample in GSM_considered){
-  getGEOSuppFiles(sample, 
-                    makeDirectory = FALSE,
-                    baseDir = getwd(), ## Or change to another directory
-                    filter_regex = &quot;cel.gz || CEL.gz&quot;,
-                    fetch_files = TRUE)
-  }
+for (sample in GSM_considered) {
+  getGEOSuppFiles(
+    sample,
+    makeDirectory = FALSE,
+    baseDir = getwd(),
+    ## Or change to another directory
+    filter_regex = &quot;cel.gz || CEL.gz&quot;,
+    fetch_files = TRUE
+  )
+}
 
 # 2. Obtain the CEL file paths
-celpaths &lt;- grepl(pattern = paste0(c(&quot;.*(&quot;, paste0(GSM_considered, collapse = &quot;|&quot;), &quot;).*&quot;), collapse = &quot;&quot;), 
-                  x = list.files(getwd()), ## Replace getwd() by baseDir
-                  ignore.case = TRUE)
+celpaths &lt;-
+  grepl(
+    pattern = paste0(c(
+      &quot;.*(&quot;, paste0(GSM_considered, collapse = &quot;|&quot;), &quot;).*&quot;
+    ), collapse = &quot;&quot;),
+    x = list.files(getwd()),
+    ## Replace getwd() by baseDir
+    ignore.case = TRUE
+  )
 celpaths &lt;- list.files(getwd())[celpaths]
-celpaths &lt;- celpaths[grepl(pattern = &quot;cel.gz&quot;, celpaths, ignore.case = TRUE)]
+celpaths &lt;-
+  celpaths[grepl(pattern = &quot;cel.gz&quot;, celpaths, ignore.case = TRUE)]
 
 # 3. Load and preprocess the data
 cel_batch &lt;- read.affybatch(celpaths)
 data(ath1121501frmavecs)
-cel_frma &lt;- frma(object = cel_batch, target = &quot;full&quot;, input.vec = ath1121501frmavecs, verbose = TRUE)
+cel_frma &lt;-
+  frma(
+    object = cel_batch,
+    target = &quot;full&quot;,
+    input.vec = ath1121501frmavecs,
+    verbose = TRUE
+  )
 
 # 4. Extract the fRMA values
 cel_e &lt;- exprs(cel_frma)
@@ -794,22 +813,28 @@ head(cel_e)</code></pre>
 ## 244906_at         6.284098</code></pre>
 <p>Finally, we can annotate the probesets with the gene names and select, for each gene model, only one probeset, with the highest levels of signal on average. The annotations of the probesets are available within the <em>ath1121501.db</em> package.</p>
 <pre class="r"><code>library(ath1121501.db)
-probeset2gene &lt;- mapIds(ath1121501.db,
-                        keys = rownames(cel_e),
-                        column = &quot;TAIR&quot;, keytype = &quot;PROBEID&quot;)
+probeset2gene &lt;- mapIds(
+  ath1121501.db,
+  keys = rownames(cel_e),
+  column = &quot;TAIR&quot;,
+  keytype = &quot;PROBEID&quot;
+)
 #cel_e &lt;- cel_e[rownames(cel_e) %in% probeset2gene$array_element_name,]
-cel_e$AGI &lt;- probeset2gene[match(x = rownames(cel_e), table = names(probeset2gene))]
+cel_e$AGI &lt;-
+  probeset2gene[match(x = rownames(cel_e), table = names(probeset2gene))]
 multiple_ps &lt;- table(cel_e$AGI)
 multiple_ps &lt;- names(multiple_ps[multiple_ps &gt; 1])
 todel_ps &lt;- list()
-for (gene in multiple_ps){
-  considered &lt;- cel_e[cel_e$AGI == gene,]
-  mu_considered &lt;- apply(as.matrix(considered[,seq(1, ncol(considered)-1)]), 1, mean)
-  mu_considered &lt;- mu_considered[order(mu_considered, decreasing = TRUE)]
+for (gene in multiple_ps) {
+  considered &lt;- cel_e[cel_e$AGI == gene, ]
+  mu_considered &lt;-
+    apply(as.matrix(considered[, seq(1, ncol(considered) - 1)]), 1, mean)
+  mu_considered &lt;-
+    mu_considered[order(mu_considered, decreasing = TRUE)]
   todel_ps[[gene]] &lt;- names(mu_considered)[2:length(mu_considered)]
 }
 todel_ps &lt;- do.call(c, todel_ps)
-cel_e &lt;- cel_e[!(rownames(cel_e) %in% todel_ps),]</code></pre>
+cel_e &lt;- cel_e[!(rownames(cel_e) %in% todel_ps), ]</code></pre>
 </div>
 <div id="references" class="section level1" number="4">
 <h1><span class="header-section-number">4</span> References</h1>
@@ -821,6 +846,10 @@ cel_e &lt;- cel_e[!(rownames(cel_e) %in% todel_ps),]</code></pre>
 <h1>Appendix</h1>
 <p>McCall MN, Bolstad BM, Irizarry RA. Frozen robust multiarray analysis (fRMA). Biostatistics. 2010 Apr;11(2):242-53. doi: 10.1093/biostatistics/kxp059. Epub 2010 Jan 22. PMID: 20097884; PMCID: PMC2830579.</p>
 <p>McCall MN, Irizarry RA. Thawing Frozen Robust Multi-array Analysis (fRMA). BMC Bioinformatics. 2011 Sep 16;12:369. doi: 10.1186/1471-2105-12-369. PMID: 21923903; PMCID: PMC3180392.</p>
+</div>
+<div id="session-info" class="section level1" number="5">
+<h1><span class="header-section-number">A</span> Session info</h1>
+<p>sessionInfo()</p>
 </div>
 
 

@@ -1,16 +1,22 @@
 Package: ath1121501frmavecs
 Title: Vectors used by frma for microarrays of type ath1121501
-Version: 1.0.0
+Version: 0.99.0
 Created: Wed Nov 29 19:56:51 2023
-Author: Matthew N. McCall <mmccall@jhsph.edu>
-Description: This package was automatically created by package frmaTools version 1.52.0.
+Authors@R: c(person("Matthew", "McCall", role = "aut",
+                     email = "Jmccallm@gmail.com"),
+              person("Rafael", "Irizarry", role = "aut",
+              email = "afa@jhu.edu"),
+              person("Quentin", "Riviere", role = "cre",
+                     email = "qri@hotmail.be"))
+Author: Matthew N. McCall <mccallm@gmail.com>, Rafael A. Irizarry <rafa@jhu.edu>
+Description: Annotation package for the implementation of the frozen Robust Multiarray Analysis procedure for Arabidopsis thaliana. This package was generated on the basis of frmaTools version 1.52.0.
 Maintainer: Quentin Riviere <qri@hotmail.be>
 Suggests: frma, GEOquery, affy, ath1121501.db, BiocStyle, knitr,
         rmarkdown
 Depends: R (>= 3.5.0)
 License: GPL (>= 2)
-biocViews: AnnotationData, AffymetrixChip, ath1121501, Arabidopsis
-        thaliana
+biocViews: AnnotationData, AffymetrixChip, FRMA, ath1121501,
+        Arabidopsis_thaliana
 NeedsCompilation: no
 VignetteBuilder: knitr
-Packaged: 2024-01-07 17:33:39 UTC; quentin
+Packaged: 2024-01-07 21:06:41 UTC; quentin
