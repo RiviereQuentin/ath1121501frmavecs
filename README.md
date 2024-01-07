@@ -27,7 +27,7 @@ The fRMA procedure is a platform-specific method, based on the pre-computation o
 
 ## Usage
 
-In the following example, we show how to compute fRMA values for three samples selected on the **GPL198** platform, namely: GSM433634, GSM1179807, and GSM433644 (GEO sample IDs). First, we download the corresponding CEL files with the **GEOquery** package and retrieve the paths of those files on our local computer; then we load the data with **affy**, and preprocess the micro-array data and extract the expression values with **frma**.
+In the following example, we show how to compute fRMA values for three samples selected on the **GPL198** platform, namely: GSM433634, GSM1179807, and GSM433644 (GEO sample IDs). First, we download the corresponding CEL files with the *GEOquery* package and retrieve the paths of those files on our local computer; then we load the data with *affy*, and preprocess the micro-array data and extract the expression values with *frma*.
 
 ```
 	library(ath1121501frmavecs)
