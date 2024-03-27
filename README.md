@@ -8,7 +8,18 @@ The fRMA procedure is a platform-specific method, based on the pre-computation o
 
 ## Installation
 
-*ath1121501frmavecs*  is an annotation package for the *fRMA* Bioconductor package, allowing to preprocess micro-array data for *Arabidopsis thaliana* given the **GPL198** platform (Array: Affymetrix Arabidopsis ATH1 Genome Array; CDF: ATH1-121501). It require a version of R >= 3.5.0. It can be installed from the github repository as follows:
+*ath1121501frmavecs*  is an annotation package for the *fRMA* Bioconductor package, allowing to preprocess micro-array data for *Arabidopsis thaliana* given the **GPL198** platform (Array: Affymetrix Arabidopsis ATH1 Genome Array; CDF: ATH1-121501). It requires a version of R >= 3.5.0. It can be installed as follows:
+
+ * From **Bioconductor**
+
+```
+    if (!require("BiocManager", quietly = TRUE))
+        install.packages("BiocManager")
+
+    BiocManager::install("ath1121501frmavecs")
+```
+ 
+ * From **github**
 
 ```
     if(!require("remotes", quietly = TRUE)){  
@@ -40,16 +51,16 @@ In the following example, we show how to compute fRMA values for three samples s
 	for (sample in GSM_considered){
 	  getGEOSuppFiles(sample, 
 		            makeDirectory = FALSE,
-		            baseDir = getwd(), ## Or change to another directory
+		            baseDir = tempdir(),
 		            filter_regex = "cel.gz || CEL.gz",
 		            fetch_files = TRUE)
 	  }
 
 	# 2. Obtain the CEL file paths
 	celpaths <- grepl(pattern = paste0(c(".*(", paste0(GSM_considered, collapse = "|"), ").*"), collapse = ""), 
-		          x = list.files(getwd()), ## Replace getwd() by baseDir
+		          x = list.files(tempdir()),
 		          ignore.case = TRUE)
-	celpaths <- list.files(getwd())[celpaths]
+	celpaths <- list.files(tempdir())[celpaths]
 	celpaths <- celpaths[grepl(pattern = "cel.gz", celpaths, ignore.case = TRUE)]
 
 	# 3. Load and preprocess the data
