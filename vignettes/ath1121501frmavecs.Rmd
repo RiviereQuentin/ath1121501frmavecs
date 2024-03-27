@@ -25,23 +25,15 @@ The fRMA procedure is a platform-specific method, based on the pre-computation o
 
 # Installation
 
-*ath1121501frmavecs*  is an annotation package for the *fRMA* Bioconductor package, allowing to preprocess micro-array data for *Arabidopsis thaliana* given the **GPL198** platform (Array: Affymetrix Arabidopsis ATH1 Genome Array; CDF: ATH1-121501). It require a version of R >= 3.5.0. It can be installed from the github repository as follows:
+*ath1121501frmavecs*  is an annotation package for the *fRMA* Bioconductor package, allowing to preprocess micro-array data for *Arabidopsis thaliana* given the **GPL198** platform (Array: Affymetrix Arabidopsis ATH1 Genome Array; CDF: ATH1-121501). 
 
-```{r, eval = FALSE}
-if (!require("remotes", quietly = TRUE)) {
-  install.packages("remotes")
-}
-if (!require("BiocManager", quietly = TRUE)) {
-  install.packages("BiocManager")
-}
-options(repos = BiocManager::repositories())
-getOption("repos")
-BiocManager::install(
-  "RiviereQuentin/ath1121501frmavecs",
-  dependencies = TRUE,
-  build_vignettes = TRUE,
-  force = TRUE
-)
+To install this package, start R (version >= 3.5.0) and enter:
+
+```{r, eval=FALSE}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ath1121501frmavecs")
 ```
 
 # Usage
@@ -60,8 +52,7 @@ for (sample in GSM_considered) {
   getGEOSuppFiles(
     sample,
     makeDirectory = FALSE,
-    baseDir = getwd(),
-    ## Or change to another directory
+    baseDir = tempdir(),
     filter_regex = "cel.gz || CEL.gz",
     fetch_files = TRUE
   )
@@ -73,11 +64,10 @@ celpaths <-
     pattern = paste0(c(
       ".*(", paste0(GSM_considered, collapse = "|"), ").*"
     ), collapse = ""),
-    x = list.files(getwd()),
-    ## Replace getwd() by baseDir
+    x = list.files(tempdir()),
     ignore.case = TRUE
   )
-celpaths <- list.files(getwd())[celpaths]
+celpaths <- list.files(tempdir())[celpaths]
 celpaths <-
   celpaths[grepl(pattern = "cel.gz", celpaths, ignore.case = TRUE)]
 
@@ -135,4 +125,7 @@ McCall MN, Irizarry RA. Thawing Frozen Robust Multi-array Analysis (fRMA). BMC B
 
 # Session info
 
+```{r}
 sessionInfo()
+```
+
