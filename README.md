@@ -62,6 +62,7 @@ In the following example, we show how to compute fRMA values for three samples s
 		          ignore.case = TRUE)
 	celpaths <- list.files(tempdir())[celpaths]
 	celpaths <- celpaths[grepl(pattern = "cel.gz", celpaths, ignore.case = TRUE)]
+	celpaths <- file.path(tempdir(), celpaths)
 
 	# 3. Load and preprocess the data
 	cel_batch <- read.affybatch(celpaths)
